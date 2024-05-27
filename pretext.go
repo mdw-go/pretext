@@ -9,7 +9,7 @@ func Emit(text string, options ...option) string {
 	for _, option := range options {
 		text = option(text)
 	}
-	return fmt.Sprintf(`<pre style="font-family: monospace;">%s</pre>`, text)
+	return fmt.Sprintf(`<pre style="font-family: monospace; padding: 0.5em;">%s</pre>`, text)
 }
 
 var Options options

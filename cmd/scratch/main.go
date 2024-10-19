@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mdwhatcott/pretext"
+	"github.com/mdw-go/pretext"
 )
 
 const text = `

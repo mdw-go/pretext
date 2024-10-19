@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mdwhatcott/pretext"
-	"github.com/mdwhatcott/testing/should"
+	"github.com/mdw-go/pretext"
+	"github.com/mdw-go/testing/should"
 )
 
 const sampleText = `
@@ -21,7 +21,7 @@ quis nostrud exercitation ullamco
         commodo consequat.
 `
 
-const expectedOutput = `<pre style="font-family: monospace;">
+const expectedOutput = `<pre style="font-family: monospace; padding: 0.5em;">
    Lorem <span style="text-decoration: underline;">ipsum</span> dolor sit amet,
   consectetur adipiscing elit,
 sed do <span style="color: #09c;">eiusmod</span> tempor incididunt
@@ -58,7 +58,7 @@ and reprove with equity for the meek of the earth...
      and righteousness shall be the girdle of his loins,
      and faithfulness           the girdle of his reins.
 `
-const expectedOutput2 = `<pre style="font-family: monospace;">
+const expectedOutput2 = `<pre style="font-family: monospace; padding: 0.5em;">
 And the <span style="color: #09c;">Spirit</span> of the Lord shall rest upon him,
     the <span style="color: #09c;">spirit</span> of wisdom and <span style="color: #9d5;">understanding</span>,
     the <span style="color: #09c;">spirit</span> of counsel and might,
